@@ -1,29 +1,29 @@
 {
-    "project_info": {
-      "project_number": "930928729992",
-      "project_id": "gig-star",
-      "storage_bucket": "gig-star.firebasestorage.app"
-    },
-    "client": [
-      {
-        "client_info": {
-          "mobilesdk_app_id": "1:930928729992:android:15c88f930efdfdbdd7643d",
-          "android_client_info": {
-            "package_name": "com.example.gigstartai"
-          }
-        },
-        "oauth_client": [],
-        "api_key": [
-          {
-            "current_key": "AIzaSyDwO36aCuvw7v2Q-vILD0ohC0ir4ZrtSIY"
-          }
-        ],
-        "services": {
-          "appinvite_service": {
-            "other_platform_oauth_client": []
-          }
+  "project_info": {
+    "project_number": "930928729992",
+    "project_id": "gig-star",
+    "storage_bucket": "gig-star.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930928729992:android:15c88f930efdfdbdd7643d",
+        "android_client_info": {
+          "package_name": "com.example.gigstartai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwO36aCuvw7v2Q-vILD0ohC0ir4ZrtSIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
         }
       }
-    ],
-    "configuration_version": "1"
-  }
+    }
+  ],
+  "configuration_version": "1"
+}
