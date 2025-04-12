@@ -21,7 +21,6 @@ class FirestoreService {
       'createdAt': FieldValue.serverTimestamp(),
     });
   }
-
    // Basic function to get potential matches (VERY basic)
    Future<List<QueryDocumentSnapshot>> getMatches(String currentUserType, List<String> userSkills) async {
      if (userSkills.isEmpty) return [];
@@ -31,7 +30,7 @@ class FirestoreService {
 
      // --- SUPER SIMPLIFIED MATCHING ---
      // Get ALL documents from the opposite collection and filter client-side
-     // WARNING: Inefficient for large datasets! OK for prototype.
+
      try {
        QuerySnapshot snapshot = await _db.collection(targetCollection).get();
        List<QueryDocumentSnapshot> matches = [];

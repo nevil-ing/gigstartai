@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gigstartai/auth_service.dart';
 import 'package:provider/provider.dart';
-import 'registration_selection_screen.dart'; // Create next
+import 'registration_selection_screen.dart'; 
 
 class LoginScreen extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();

@@ -8,7 +8,7 @@ class AuthService extends ChangeNotifier {
   AuthService() {
     _auth.authStateChanges().listen((User? user) {
       _user = user;
-      notifyListeners(); // Notify listeners (like AuthGate) about changes
+      notifyListeners(); 
     });
   }
 

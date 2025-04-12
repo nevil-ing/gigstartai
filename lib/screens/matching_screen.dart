@@ -13,7 +13,7 @@ class _MatchingScreenState extends State<MatchingScreen> {
   final FirestoreService _firestoreService = FirestoreService();
   Future<List<QueryDocumentSnapshot>>? _matchesFuture;
   String? _currentUserType;
-  String _userName = 'User'; // Default name
+  String _userName = 'User'; 
 
   @override
   void initState() {
@@ -108,7 +108,19 @@ class _MatchingScreenState extends State<MatchingScreen> {
                 child: ListTile(
                   title: Text('$matchType: $name'),
                   subtitle: Text('Skills: $skills'),
-                  // TODO: Add onTap for details later
+                  onTap: (){
+                    showDialog(context: context, builder: (context){
+                      return AlertDialog(
+                        title: Text('$matchType: $name'),
+                        content: Column(children: [
+                          Text('Skills: $skills'),
+                          SizedBox(height: 10,),
+                          Text('')
+
+                        ],)
+                      );
+                    });
+                  },
                 ),
               );
             },
